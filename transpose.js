@@ -14,6 +14,7 @@ let matrix = [
     [2, 3, 6],
     [7, 8, 9]
 ];
+
 console.log(transpose(matrix));
 
-// Transpose: Making ith row as ith coloumn
+// Transpose: Making ith row as ith coloumn and vice-versa

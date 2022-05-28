@@ -30,12 +30,3 @@ let simpleObject = {
 
 let aNewObject = Object.create(simpleObject);
 console.log(aNewObject.aFunction()); // function inside simpleObject
-
-// Parameter.length
-route = [0, 1, 2, 3, 4]
-function routeRobot(state, memory) {
-    if (memory.length == 0) memory = route;
-    console.log(memory);
-}
-
-routeRobot(0, []);

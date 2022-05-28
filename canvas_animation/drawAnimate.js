@@ -15,7 +15,7 @@ async function draw() {
             await timer(10);
         }
 
-        for (let i = 99; i > 0; i--) {
+        for (let i = 99; i >= 0; i--) {
             context.fillStyle = 'rgb(255, 255, 255)';
             context.fillRect(30, 30, 50 + i, 50 + i)
             context.fillStyle = 'rgba(0, 0, 200, 0.5)';
