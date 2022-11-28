@@ -4,10 +4,10 @@ const http = require("http");
 
 http.createServer((req, res) => {
     // Reading file and sending as a response
-    fs.readFile("tmp_html.html", (error, data) => {
+    fs.readFile("temp-html-file.html", (error, data) => {
         res.writeHead(200, {"content-type": "text/html"});
         res.write(data);
-        res.end()
+        res.end();
     });
 }).listen(3000);
 
