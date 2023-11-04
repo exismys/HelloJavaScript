@@ -31,12 +31,12 @@ console.log(/neighou?r/.test("neighor")); // true
 // {a, b}: to occur atleast a time and atmost b times
 console.log(/a{4}/.test("aaaa")); // true
 console.log(/a{4}/.test("aaa")); // false
-console.log(/a{2,4}/.test("aaa")) // true
+console.log(/a{2,4}/.test("aaa")); // true
 
 // (): grouping subexpressions
-console.log(/(aa){2,4}/.test("aaaa")) // true
+console.log(/(aa){2,4}/.test("aaaa")); // true
 
 // exec: to get more information about the match
 let match = /\d+/.exec("one two 300");
-console.log(match); //['300', index: 8, input: 'one two 300', groups: undefined]
-console.log(match.index) // 8
+console.log(match); // ['300', index: 8, input: 'one two 300', groups: undefined]
+console.log(match.index); // 8
